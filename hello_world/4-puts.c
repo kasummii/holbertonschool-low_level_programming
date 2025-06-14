@@ -1,17 +1,12 @@
 #include <stdio.h>
 
-<<<<<<< HEAD
-int main(void)
-{
-    puts("\"Programming is like building a multilingual puzzle\"");
-=======
 /**
- * main - prints a message using puts
- * Return: 0 if success
+ * main - Prints the required string using puts
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-    puts("Programming is like building a multilingual puzzle");
->>>>>>> 7bd6f15 (Add 4-puts.c printing message using puts function)
-    return (0);
+puts("Programming is like building a multilingual puzzle");
+return (0);
 }
