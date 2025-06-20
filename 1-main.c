@@ -2,17 +2,24 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the _isdigit function for all digits and ASCII chars
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char c;
+    int c;
 
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));  /* Should print 0: 1 */
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));  /* Should print a: 0 */
+    /* Check digits 0 to 9 */
+    for (c = '0'; c <= '9'; c++)
+        printf("%c: %d\n", c, _isdigit(c));
+
+    /* Check ASCII characters 32 to 126 excluding digits */
+    for (c = 32; c <= 126; c++)
+    {
+        if (c < '0' || c > '9')
+            printf("%c: %d\n", c, _isdigit(c));
+    }
+
     return (0);
 }
