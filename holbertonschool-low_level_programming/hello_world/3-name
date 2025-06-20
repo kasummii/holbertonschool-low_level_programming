@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script to compile $CFILE into an executable named cisfun
+
+gcc -o cisfun "$CFILE"
